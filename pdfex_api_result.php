@@ -24,7 +24,7 @@ if (isset($argv[1])) {
 
 
 
-function mwtreport($hash, $type='xml'){
+function mwtreport($hash, $type='json'){
 	$curl = curl_init();
 	$url =  "http://www.pdfexaminer.com/pdfapirep.php?hash=$hash&type=$type";
 	curl_setopt($curl, CURLOPT_URL, $url);
