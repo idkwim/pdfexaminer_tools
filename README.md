@@ -9,6 +9,8 @@ GET or POST https://www.pdfexaminer.com/pdfapirep.php
 
 ### Query Params:
 
+type: json, ioc, php (serialized array), severity, rating, is_malware, text, summary
+
 hash: Any md5, sha1 or sha256
 
 md5: md5
@@ -25,6 +27,8 @@ Upload file for analysis:
 POST https://www.pdfexaminer.com/pdfapi.php
 
 ### Query Params:
+
+type: json, ioc, php (serialized array), severity, rating, is_malware, text, summary
 
 sample[]: File content
 
