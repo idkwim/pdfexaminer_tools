@@ -26,7 +26,7 @@ if (is_file($argv[1])) {
 
 function mwtfile($file, $email = '', $message = ''){
 	$curl = curl_init();
-	curl_setopt($curl, CURLOPT_URL, "https://www.malwaretracker.com/pdfapi.php");
+	curl_setopt($curl, CURLOPT_URL, "https://www.pdfexaminer.com/pdfapi.php");
 	curl_setopt($curl, CURLOPT_POST, true);
 	curl_setopt($curl, CURLOPT_VERBOSE, 0);
 	curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1); 
@@ -35,7 +35,7 @@ function mwtfile($file, $email = '', $message = ''){
 	curl_setopt($curl, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible;) MWT API 1.0");
 
 	curl_setopt($curl, CURLOPT_FOLLOWLOCATION, 1); 
-	$data = array( "sample[]"=> "@$file", 'type' => 'xml');
+	$data = array( "sample[]"=> "@$file", 'type' => 'json');
 	if ($message != '')
 		$data['message'] = $message;
 	if ($email != '')
