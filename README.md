@@ -1,5 +1,6 @@
 pdfexaminer
 ===========
+<img src="https://www.pdfexaminer.com/images/PDFExaminer-Icon-Colour.png" height="250">
 
 PDFExaminer PDF malware analysis tools - submit PDF and XDP (encapsulated PDF) files for analysis and receive results.
 
